@@ -5,8 +5,10 @@ jobs:
     name: Hello world action
     runs-on: ubuntu-latest    
     steps:
-    - name: test
+    - name: Github repo
       run: echo "${{ github.repository }}"
+    - name: Github workkspace
+      run: echo "{{ GITHUB_WORKSPACE }}"
     - uses: actions/checkout@v1
     - uses: ./action-a
       env:
