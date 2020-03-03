@@ -5,6 +5,8 @@ jobs:
     name: Hello world action
     runs-on: ubuntu-latest    
     steps:
+    - name: test
+      run: echo "${{ github.repository }}"
     - uses: actions/checkout@v1
     - uses: ./action-a
       env:
