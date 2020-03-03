@@ -5,6 +5,9 @@ jobs:
     name: Hello world action
     runs-on: ubuntu-latest    
     steps:
+    - name: Testing
+      env:
+        EVENT_CONTEXT: ${{ github.event }}
     - uses: actions/checkout@v1
     - uses: ./action-a
       env:
