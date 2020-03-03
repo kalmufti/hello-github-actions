@@ -9,4 +9,3 @@ jobs:
     - uses: ./action-a
       env:
         MY_NAME: "Khalid"
-        EVENT_CONTEXT: ${{ github.event }}
